@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: url("{{ url_for('static', filename='images/AI-Farm.jpg') }}") no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+    .overlay {
+      background: rgba(0, 0, 0, 0.5);
+      min-height: 100vh;
+      padding: 60px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+    }
+    .description {
+      max-width: 800px;
+      text-align: center;
+    }
+    .description h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+    .description p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .buttons button {
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      padding: 20px 40px;
+      font-size: 18px;
+      font-weight: 600;
+      color: #fff;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      min-width: 200px;
+    }
+    .buttons button:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <div class="description">
+      <h1>Our Solutions</h1>
+      <p>We offer cutting-edge agricultural solutions tailored to empower farmers and promote sustainable farming. From smart irrigation systems to advanced data analytics, our tools help optimize productivity and protect the environment. Explore our six core innovations designed to modernize the way we farm.</p>
+    </div>
+    <div class="buttons">
+      <button>Smart Irrigation</button>
+      <button>Crop Monitoring</button>
+      <button>Soil Analysis</button>
+      <button>Automated Machinery</button>
+      <button>Drone Surveillance</button>
+      <button>Data Analytics</button>
+    </div>
+  </div>
+</body>
+</html>

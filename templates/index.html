@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Farmwise</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  
+
+  <style>
+    body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: url("{{ url_for('static', filename='images/photo3.png') }}") no-repeat center center fixed;
+    background-size: cover;
+    color: #1a1a1a;;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background: white;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    .auth {
+      display: flex;
+      gap: 10px;
+    }
+    .auth a {
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-weight: 600;
+    }
+    .login {
+      color: #333;
+    }
+    .signup {
+      background: #1f9c6b;
+      color: white;
+    }
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 80px 60px;
+    }
+    .hero-text {
+      max-width: 500px;
+    }
+    .hero-text h1 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+    .hero-text p {
+      color: #555;
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+    .hero-text button {
+      background: #1f9c6b;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .hero-img img {
+      max-width: 1000px;
+    }
+    @media screen and (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+      .hero-img img {
+        margin-top: 80px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"><strong>CropDoc</strong></div>
+    <nav>
+      <a href="{{url_for('about') }}" class="nav">About us</a>
+      <a href="{{ url_for('sol')  }}" class="nav">Our solutions</a>
+      <a href="#">Impact</a>
+      <a href="#">Get involved</a>
+      <a href="#">Contact us</a>
+    </nav>
+    <div class="auth">
+      <a href="{{ url_for('log') }}" class="login">Log in</a>
+      
+      
+      <a href="{{ url_for ('reg') }}" class="signup">Sign up</a>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Transforming farming for a greener world</h1>
+      <p>Join the movement towards greener agriculture. Explore our solutions.</p>
+      <button onclick="location.href='{{ url_for('identify') }}'">Go Green</button>
+    </div>
+    <div class="hero-img">
+      <img src="/photo3.png" >
+    </div>
+  </section>
+</body>
+</html>

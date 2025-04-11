@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, lawnGreen, skyBlue, crimson);
+      background-size: 600% 600%;
+      animation: gradientBG 15s ease infinite;
+      color: #fff;
+    }
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .overlay {
+      background: rgba(0, 0, 0, 0.6);
+      min-height: 100vh;
+      padding: 60px 20px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+    }
+    h1 {
+      font-size: 48px;
+      margin-bottom: 40px;
+    }
+    .team {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 30px;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      padding: 20px;
+      width: 300px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+    .card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+    .card h3 {
+      margin: 10px 0 5px;
+      font-size: 20px;
+    }
+    .card p {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <div class="container">
+      <h1>Meet Our Team</h1>
+      <div class="team">
+        <div class="card">
+          <img src="/images/person1.jpg" alt="Person 1">
+          <h3>Brij Bhushan Sharma</h3>
+          <p>Founder & CEO with a passion for sustainable farming and 10+ years of agricultural innovation experience.</p>
+        </div>
+        <div class="card">
+          <img src="/images/person2.jpg" alt="Person 2">
+          <h3>Riya Singh</h3>
+          <p>Chief Agronomist, expert in crop management and soil science, leading eco-friendly initiatives at Farmwise.</p>
+        </div>
+        <div class="card">
+          <img src="/images/person3.jpg" alt="Person 3">
+          <h3>Tanya Singh</h3>
+          <p>Lead Developer crafting smart farming solutions that bridge the gap between tech and agriculture.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
