@@ -74,7 +74,7 @@ This full pipeline makes the project not just a machine learning demo, but a ful
 | Backend      | Python, Flask                                |
 | Deep Learning| PyTorch, Custom ResNet Architecture          |
 | UI/UX        | Responsive Design, Basic Animations          |
-| Deployment   | Localhost (optional: [Render](https://render.com), [Hugging Face Spaces](https://huggingface.co/spaces)) |
+| Deployment   | Localhost (optional: Render, Hugging Face Spaces) |
 
 ---
 
@@ -115,7 +115,7 @@ Place the `resnet.pth` file in the `model/` directory.
 python app.py
 ```
 
-Then open your browser and go to [http://localhost:5000](http://localhost:5000)
+Then open your browser and go to http://localhost:5000
 
 ---
 
